@@ -7,8 +7,7 @@ const notesRouter = require("./routes/notesRoutes");
 const userRoutes = require("./routes/userRoutes");
 
 const corsOptions = {
-  origin:
-    "https://your-notes-git-rigved-branch-13-11-2022-rigved29.vercel.app/",
+  origin: "https://your-notes-git-rigved-branch-13-11-2022-rigved29.vercel.app",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
