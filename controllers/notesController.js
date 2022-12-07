@@ -4,7 +4,7 @@ exports.getAllNotes = async (req, res) => {
   try {
     const allNotes = await NoteModel.find();
 
-    console.log(req.headers);
+    console.log("REQHEADERS", req.headers);
 
     res.status(200).json({
       status: "success",
@@ -14,7 +14,7 @@ exports.getAllNotes = async (req, res) => {
       },
     });
   } catch (err) {
-    console.log(err);
+    console.log("ERROR", err);
   }
 };
 

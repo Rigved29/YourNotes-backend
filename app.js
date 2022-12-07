@@ -8,6 +8,7 @@ const userRoutes = require("./routes/userRoutes");
 
 const corsOptions = {
   origin: "https://your-notes-chi.vercel.app",
+  // origin: "http://localhost:3000",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
@@ -28,6 +29,7 @@ mongoose
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false,
+    useUnifiedTopology: true,
   })
   .then((con) => {
     console.log(con.connections);
